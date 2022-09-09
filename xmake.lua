@@ -1,0 +1,6 @@
+task("verilator")
+    set_category("plugin")
+    on_run(function ()
+        import("kconfig")
+        kconfig.clean()
+    end)
